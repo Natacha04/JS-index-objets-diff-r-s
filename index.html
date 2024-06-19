@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <script>
+//objet différé
+var impots = {}; // initialise mon objet a vide
+impots.netAvantImpot = 3000;
+impots.baseImpot = 300.
+impots.tauxPersImpots = 0.08;
+impots.montantPrelevImpots = 230;
+impots.totalVerseEmployeur = function(baseImpot, tauxPersImpots, montantPrelevImpots){
+    console.log(arguments);
+    var netAvantImpot = baseImpot*tauxPersImpots;
+    var total = netAvantImpot + montantPrelevImpots;
+    return total;
+}
+
+var tot1 = impots.totalVerseEmployeur(2500, 0.08, 300);
+var tot2 = impots.totalVerseEmployeur(4500, 0.08, 400);
+var tot3 = impots.totalVerseEmployeur(7500, 0.08, 500);
+
+console.log('Le total versé 1 : ' +tot1);
+console.log('Le total versé 2 : ' +tot2);
+console.log('Le total versé 3 : ' +tot3);
+</script> 
+<body>
+</body>
+</html>
